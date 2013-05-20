@@ -1,29 +1,33 @@
-# Json::Prettyprint
+# JSON PrettyPrint
 
-TODO: Write a gem description
+The **JSON PrettyPrint** is a simple tool that let you format any json output (like one received
+from some API using `curl`). It will format the JSON response and apply syntax highlighting.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'json-prettyprint'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+The best way to install this tool is to manually execute:
 
     $ gem install json-prettyprint
 
+You can also add it to the Gemfile if you want:
+
+```ruby
+gem 'json-prettyprint'
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+The **JSON PrettyPrint** provides command line tool `jj` which can be piped to any other command
+like this:
 
-## Contributing
+    $ curl https://github.com/michalorman.json | jj
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+If you, for some weird reason, want to use it in some code, you can generate pretty
+json like this:
+
+```ruby
+require 'json-prettyprint'
+
+json = STDIN.gets
+pretty_json = JSON::PrettyPrint.print json
+```
