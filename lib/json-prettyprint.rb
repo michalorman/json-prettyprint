@@ -11,6 +11,7 @@ if RUBY_VERSION < "1.9"
 end
 
 require 'json'
+require 'coderay'
 require "json-prettyprint/version"
 
 module JSON
