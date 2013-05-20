@@ -2,5 +2,5 @@
 
 require 'json-prettyprint'
 
-pretty_json = JSON::PrettyPrint.print STDIN.gets
+pretty_json = JSON::PrettyPrint.prettify STDIN.gets
 puts pretty_json

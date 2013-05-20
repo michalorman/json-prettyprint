@@ -1,5 +1,8 @@
 # JSON PrettyPrint
 
+The only reason for creating this gem was to provide me some tool that will allow me formatting
+and highlighting JSON API responses fetched using `curl` command.
+
 The **JSON PrettyPrint** is a simple tool that let you format any json output (like one received
 from some API using `curl`). It will format the JSON response and apply syntax highlighting.
 
@@ -29,5 +32,5 @@ json like this:
 require 'json-prettyprint'
 
 json = STDIN.gets
-pretty_json = JSON::PrettyPrint.print json
+pretty_json = JSON::PrettyPrint.prettify json
 ```
