@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'json-prettyprint'
+
+pretty_json = JSON::PrettyPrint.print STDIN.gets
+puts pretty_json
