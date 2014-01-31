@@ -1,5 +1,7 @@
 # JSON PrettyPrint
 
+[![Gem Version](https://badge.fury.io/rb/json-prettyprint.png)](http://badge.fury.io/rb/json-prettyprint)
+
 The only reason for creating this gem was to provide me some tool that will allow me formatting
 and highlighting JSON API responses fetched using `curl` command.
 
